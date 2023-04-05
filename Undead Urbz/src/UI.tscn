@@ -1,0 +1,343 @@
+[gd_scene format=2]
+
+[node name="UI" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.109804, 0.219608, 0.219608, 1 )
+
+[node name="HSplitContainer" type="HSplitContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 8.0
+margin_top = 8.0
+margin_right = -8.0
+margin_bottom = -8.0
+
+[node name="VSplitContainer" type="VBoxContainer" parent="HSplitContainer"]
+margin_right = 343.0
+margin_bottom = 584.0
+size_flags_horizontal = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="HSplitContainer/VSplitContainer"]
+margin_right = 343.0
+margin_bottom = 124.0
+size_flags_horizontal = 3
+
+[node name="GridContainer" type="GridContainer" parent="HSplitContainer/VSplitContainer/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 336.0
+margin_bottom = 117.0
+columns = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer"]
+self_modulate = Color( 1, 0, 0, 1 )
+margin_right = 107.0
+margin_bottom = 34.0
+rect_min_size = Vector2( 107, 0 )
+
+[node name="Button" type="Button" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 100.0
+margin_bottom = 27.0
+text = "Richmond Hospital"
+clip_text = true
+
+[node name="PanelContainer2" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer"]
+margin_left = 111.0
+margin_right = 218.0
+margin_bottom = 34.0
+rect_min_size = Vector2( 107, 0 )
+
+[node name="Button" type="Button" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer/PanelContainer2"]
+modulate = Color( 1, 1, 0, 1 )
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 100.0
+margin_bottom = 27.0
+text = "a Factory"
+clip_text = true
+
+[node name="PanelContainer3" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer"]
+margin_left = 222.0
+margin_right = 329.0
+margin_bottom = 34.0
+rect_min_size = Vector2( 107, 0 )
+
+[node name="Button" type="Button" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer/PanelContainer3"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 100.0
+margin_bottom = 27.0
+text = "Hostel Apts."
+clip_text = true
+
+[node name="PanelContainer4" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer"]
+margin_top = 38.0
+margin_right = 107.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 107, 0 )
+
+[node name="Button" type="Button" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer/PanelContainer4"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 100.0
+margin_bottom = 27.0
+text = "Hostel Apts."
+clip_text = true
+
+[node name="PanelContainer5" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer"]
+margin_left = 111.0
+margin_top = 38.0
+margin_right = 218.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 107, 0 )
+
+[node name="Button" type="Button" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer/PanelContainer5"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 100.0
+margin_bottom = 27.0
+text = "Hostel Apts."
+clip_text = true
+
+[node name="PanelContainer6" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer"]
+margin_left = 222.0
+margin_top = 38.0
+margin_right = 329.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 107, 0 )
+
+[node name="Button" type="Button" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer/PanelContainer6"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 100.0
+margin_bottom = 27.0
+text = "Hostel Apts."
+clip_text = true
+
+[node name="PanelContainer7" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer"]
+margin_top = 76.0
+margin_right = 107.0
+margin_bottom = 110.0
+rect_min_size = Vector2( 107, 0 )
+
+[node name="Button" type="Button" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer/PanelContainer7"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 100.0
+margin_bottom = 27.0
+text = "Hostel Apts."
+clip_text = true
+
+[node name="PanelContainer8" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer"]
+margin_left = 111.0
+margin_top = 76.0
+margin_right = 218.0
+margin_bottom = 110.0
+rect_min_size = Vector2( 107, 0 )
+
+[node name="Button" type="Button" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer/PanelContainer8"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 100.0
+margin_bottom = 27.0
+text = "Hostel Apts."
+clip_text = true
+
+[node name="PanelContainer9" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer"]
+margin_left = 222.0
+margin_top = 76.0
+margin_right = 329.0
+margin_bottom = 110.0
+rect_min_size = Vector2( 107, 0 )
+
+[node name="Button" type="Button" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer/PanelContainer9"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 100.0
+margin_bottom = 27.0
+text = "Hostel Apts."
+clip_text = true
+
+[node name="PanelContainer2" type="PanelContainer" parent="HSplitContainer/VSplitContainer"]
+margin_top = 128.0
+margin_right = 343.0
+margin_bottom = 162.0
+size_flags_horizontal = 3
+
+[node name="MenuButton" type="MenuButton" parent="HSplitContainer/VSplitContainer/PanelContainer2"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 336.0
+margin_bottom = 27.0
+text = "Menu"
+items = [ "Settings", null, 0, false, false, 0, 0, null, "", false, "Log Out", null, 0, false, false, 1, 0, null, "", false, "Skills", null, 0, false, false, 2, 0, null, "", false, "Contacts", null, 0, false, false, 3, 0, null, "", false ]
+
+[node name="Control" type="CenterContainer" parent="HSplitContainer/VSplitContainer"]
+margin_top = 166.0
+margin_right = 343.0
+margin_bottom = 166.0
+
+[node name="PanelContainer2" type="PanelContainer" parent="HSplitContainer"]
+margin_left = 355.0
+margin_right = 1008.0
+margin_bottom = 584.0
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HSplitContainer/PanelContainer2"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 646.0
+margin_bottom = 577.0
+
+[node name="PanelContainer" type="PanelContainer" parent="HSplitContainer/PanelContainer2/VBoxContainer"]
+margin_right = 639.0
+margin_bottom = 29.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="HSplitContainer/PanelContainer2/VBoxContainer/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 632.0
+margin_bottom = 22.0
+text = "You see a survivor... You want brains."
+fit_content_height = true
+
+[node name="VSplitContainer" type="VSplitContainer" parent="HSplitContainer/PanelContainer2/VBoxContainer"]
+margin_top = 33.0
+margin_right = 639.0
+margin_bottom = 83.0
+
+[node name="Label" type="Label" parent="HSplitContainer/PanelContainer2/VBoxContainer/VSplitContainer"]
+margin_right = 639.0
+margin_bottom = 14.0
+text = "Actions:"
+
+[node name="GridContainer" type="GridContainer" parent="HSplitContainer/PanelContainer2/VBoxContainer/VSplitContainer"]
+margin_top = 26.0
+margin_right = 639.0
+margin_bottom = 50.0
+columns = 4
+
+[node name="Button" type="Button" parent="HSplitContainer/PanelContainer2/VBoxContainer/VSplitContainer/GridContainer"]
+margin_right = 117.0
+margin_bottom = 24.0
+text = "Leave Outpost 1"
+
+[node name="Button2" type="Button" parent="HSplitContainer/PanelContainer2/VBoxContainer/VSplitContainer/GridContainer"]
+margin_left = 121.0
+margin_right = 208.0
+margin_bottom = 24.0
+text = "Search Area"
+
+[node name="LineEdit" type="LineEdit" parent="HSplitContainer/PanelContainer2/VBoxContainer/VSplitContainer/GridContainer"]
+margin_left = 212.0
+margin_right = 352.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 140, 0 )
+placeholder_text = "Say something..."
+
+[node name="HSplitContainer" type="HBoxContainer" parent="HSplitContainer/PanelContainer2/VBoxContainer/VSplitContainer/GridContainer"]
+margin_left = 356.0
+margin_right = 635.0
+margin_bottom = 24.0
+
+[node name="Label" type="Label" parent="HSplitContainer/PanelContainer2/VBoxContainer/VSplitContainer/GridContainer/HSplitContainer"]
+margin_top = 5.0
+margin_right = 44.0
+margin_bottom = 19.0
+text = "Attack:"
+
+[node name="OptionButton" type="OptionButton" parent="HSplitContainer/PanelContainer2/VBoxContainer/VSplitContainer/GridContainer/HSplitContainer"]
+margin_left = 48.0
+margin_right = 131.0
+margin_bottom = 24.0
+text = "Ironhard"
+
+[node name="Label2" type="Label" parent="HSplitContainer/PanelContainer2/VBoxContainer/VSplitContainer/GridContainer/HSplitContainer"]
+margin_left = 135.0
+margin_top = 5.0
+margin_right = 166.0
+margin_bottom = 19.0
+text = "with:"
+
+[node name="OptionButton2" type="OptionButton" parent="HSplitContainer/PanelContainer2/VBoxContainer/VSplitContainer/GridContainer/HSplitContainer"]
+margin_left = 170.0
+margin_right = 279.0
+margin_bottom = 24.0
+text = "Hands (20%)"
+
+[node name="VSplitContainer2" type="VSplitContainer" parent="HSplitContainer/PanelContainer2/VBoxContainer"]
+margin_top = 87.0
+margin_right = 639.0
+margin_bottom = 133.0
+
+[node name="Label" type="Label" parent="HSplitContainer/PanelContainer2/VBoxContainer/VSplitContainer2"]
+margin_right = 639.0
+margin_bottom = 14.0
+text = "Inventory:"
+
+[node name="GridContainer" type="GridContainer" parent="HSplitContainer/PanelContainer2/VBoxContainer/VSplitContainer2"]
+margin_top = 26.0
+margin_right = 639.0
+margin_bottom = 46.0
+columns = 4
+
+[node name="Button" type="Button" parent="HSplitContainer/PanelContainer2/VBoxContainer/VSplitContainer2/GridContainer"]
+margin_right = 68.0
+margin_bottom = 20.0
+text = "Hammer"
+
+[node name="Button2" type="Button" parent="HSplitContainer/PanelContainer2/VBoxContainer/VSplitContainer2/GridContainer"]
+margin_left = 72.0
+margin_right = 215.0
+margin_bottom = 20.0
+text = "NecroTransen Badge"
+
+[node name="VSplitContainer3" type="VSplitContainer" parent="HSplitContainer/PanelContainer2/VBoxContainer"]
+margin_top = 137.0
+margin_right = 639.0
+margin_bottom = 183.0
+
+[node name="Label" type="Label" parent="HSplitContainer/PanelContainer2/VBoxContainer/VSplitContainer3"]
+margin_right = 639.0
+margin_bottom = 14.0
+text = "You are 18% encumbered:"
+
+[node name="GridContainer" type="GridContainer" parent="HSplitContainer/PanelContainer2/VBoxContainer/VSplitContainer3"]
+margin_top = 26.0
+margin_right = 639.0
+margin_bottom = 46.0
+columns = 4
+
+[node name="HSplitContainer" type="HBoxContainer" parent="HSplitContainer/PanelContainer2/VBoxContainer/VSplitContainer3/GridContainer"]
+margin_right = 165.0
+margin_bottom = 20.0
+
+[node name="Label" type="Label" parent="HSplitContainer/PanelContainer2/VBoxContainer/VSplitContainer3/GridContainer/HSplitContainer"]
+margin_top = 3.0
+margin_right = 35.0
+margin_bottom = 17.0
+text = "Drop:"
+
+[node name="OptionButton" type="OptionButton" parent="HSplitContainer/PanelContainer2/VBoxContainer/VSplitContainer3/GridContainer/HSplitContainer"]
+margin_left = 39.0
+margin_right = 124.0
+margin_bottom = 20.0
+text = "Hammer"
+
+[node name="Label2" type="Label" parent="HSplitContainer/PanelContainer2/VBoxContainer/VSplitContainer3/GridContainer/HSplitContainer"]
+margin_left = 128.0
+margin_top = 3.0
+margin_right = 165.0
+margin_bottom = 17.0
+text = "(0 AP)"
