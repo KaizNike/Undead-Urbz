@@ -27,23 +27,27 @@ size_flags_horizontal = 3
 
 [node name="PanelContainer" type="PanelContainer" parent="HSplitContainer/VSplitContainer"]
 margin_right = 343.0
-margin_bottom = 124.0
+margin_bottom = 157.0
 size_flags_horizontal = 3
 
-[node name="GridContainer" type="GridContainer" parent="HSplitContainer/VSplitContainer/PanelContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="HSplitContainer/VSplitContainer/PanelContainer"]
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 336.0
-margin_bottom = 117.0
+margin_bottom = 150.0
+
+[node name="GridContainer" type="GridContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/VBoxContainer"]
+margin_right = 329.0
+margin_bottom = 110.0
 columns = 3
 
-[node name="PanelContainer" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer"]
+[node name="PanelContainer" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/VBoxContainer/GridContainer"]
 self_modulate = Color( 1, 0, 0, 1 )
 margin_right = 107.0
 margin_bottom = 34.0
 rect_min_size = Vector2( 107, 0 )
 
-[node name="Button" type="Button" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer/PanelContainer"]
+[node name="Button" type="Button" parent="HSplitContainer/VSplitContainer/PanelContainer/VBoxContainer/GridContainer/PanelContainer"]
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 100.0
@@ -51,13 +55,13 @@ margin_bottom = 27.0
 text = "Richmond Hospital"
 clip_text = true
 
-[node name="PanelContainer2" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer"]
+[node name="PanelContainer2" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/VBoxContainer/GridContainer"]
 margin_left = 111.0
 margin_right = 218.0
 margin_bottom = 34.0
 rect_min_size = Vector2( 107, 0 )
 
-[node name="Button" type="Button" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer/PanelContainer2"]
+[node name="Button" type="Button" parent="HSplitContainer/VSplitContainer/PanelContainer/VBoxContainer/GridContainer/PanelContainer2"]
 modulate = Color( 1, 1, 0, 1 )
 margin_left = 7.0
 margin_top = 7.0
@@ -66,13 +70,13 @@ margin_bottom = 27.0
 text = "a Factory"
 clip_text = true
 
-[node name="PanelContainer3" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer"]
+[node name="PanelContainer3" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/VBoxContainer/GridContainer"]
 margin_left = 222.0
 margin_right = 329.0
 margin_bottom = 34.0
 rect_min_size = Vector2( 107, 0 )
 
-[node name="Button" type="Button" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer/PanelContainer3"]
+[node name="Button" type="Button" parent="HSplitContainer/VSplitContainer/PanelContainer/VBoxContainer/GridContainer/PanelContainer3"]
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 100.0
@@ -80,13 +84,13 @@ margin_bottom = 27.0
 text = "Hostel Apts."
 clip_text = true
 
-[node name="PanelContainer4" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer"]
+[node name="PanelContainer4" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/VBoxContainer/GridContainer"]
 margin_top = 38.0
 margin_right = 107.0
 margin_bottom = 72.0
 rect_min_size = Vector2( 107, 0 )
 
-[node name="Button" type="Button" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer/PanelContainer4"]
+[node name="Button" type="Button" parent="HSplitContainer/VSplitContainer/PanelContainer/VBoxContainer/GridContainer/PanelContainer4"]
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 100.0
@@ -94,14 +98,14 @@ margin_bottom = 27.0
 text = "Hostel Apts."
 clip_text = true
 
-[node name="PanelContainer5" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer"]
+[node name="PanelContainer5" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/VBoxContainer/GridContainer"]
 margin_left = 111.0
 margin_top = 38.0
 margin_right = 218.0
 margin_bottom = 72.0
 rect_min_size = Vector2( 107, 0 )
 
-[node name="Button" type="Button" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer/PanelContainer5"]
+[node name="Button" type="Button" parent="HSplitContainer/VSplitContainer/PanelContainer/VBoxContainer/GridContainer/PanelContainer5"]
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 100.0
@@ -109,14 +113,14 @@ margin_bottom = 27.0
 text = "Hostel Apts."
 clip_text = true
 
-[node name="PanelContainer6" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer"]
+[node name="PanelContainer6" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/VBoxContainer/GridContainer"]
 margin_left = 222.0
 margin_top = 38.0
 margin_right = 329.0
 margin_bottom = 72.0
 rect_min_size = Vector2( 107, 0 )
 
-[node name="Button" type="Button" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer/PanelContainer6"]
+[node name="Button" type="Button" parent="HSplitContainer/VSplitContainer/PanelContainer/VBoxContainer/GridContainer/PanelContainer6"]
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 100.0
@@ -124,13 +128,13 @@ margin_bottom = 27.0
 text = "Hostel Apts."
 clip_text = true
 
-[node name="PanelContainer7" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer"]
+[node name="PanelContainer7" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/VBoxContainer/GridContainer"]
 margin_top = 76.0
 margin_right = 107.0
 margin_bottom = 110.0
 rect_min_size = Vector2( 107, 0 )
 
-[node name="Button" type="Button" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer/PanelContainer7"]
+[node name="Button" type="Button" parent="HSplitContainer/VSplitContainer/PanelContainer/VBoxContainer/GridContainer/PanelContainer7"]
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 100.0
@@ -138,14 +142,14 @@ margin_bottom = 27.0
 text = "Hostel Apts."
 clip_text = true
 
-[node name="PanelContainer8" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer"]
+[node name="PanelContainer8" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/VBoxContainer/GridContainer"]
 margin_left = 111.0
 margin_top = 76.0
 margin_right = 218.0
 margin_bottom = 110.0
 rect_min_size = Vector2( 107, 0 )
 
-[node name="Button" type="Button" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer/PanelContainer8"]
+[node name="Button" type="Button" parent="HSplitContainer/VSplitContainer/PanelContainer/VBoxContainer/GridContainer/PanelContainer8"]
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 100.0
@@ -153,25 +157,38 @@ margin_bottom = 27.0
 text = "Hostel Apts."
 clip_text = true
 
-[node name="PanelContainer9" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer"]
+[node name="PanelContainer9" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/VBoxContainer/GridContainer"]
 margin_left = 222.0
 margin_top = 76.0
 margin_right = 329.0
 margin_bottom = 110.0
 rect_min_size = Vector2( 107, 0 )
 
-[node name="Button" type="Button" parent="HSplitContainer/VSplitContainer/PanelContainer/GridContainer/PanelContainer9"]
+[node name="Button" type="Button" parent="HSplitContainer/VSplitContainer/PanelContainer/VBoxContainer/GridContainer/PanelContainer9"]
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 100.0
 margin_bottom = 27.0
 text = "Hostel Apts."
 clip_text = true
+
+[node name="PanelContainer" type="PanelContainer" parent="HSplitContainer/VSplitContainer/PanelContainer/VBoxContainer"]
+margin_top = 114.0
+margin_right = 329.0
+margin_bottom = 143.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="HSplitContainer/VSplitContainer/PanelContainer/VBoxContainer/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 322.0
+margin_bottom = 22.0
+text = "You are KaizNike, with 50 HP."
+fit_content_height = true
 
 [node name="PanelContainer2" type="PanelContainer" parent="HSplitContainer/VSplitContainer"]
-margin_top = 128.0
+margin_top = 161.0
 margin_right = 343.0
-margin_bottom = 162.0
+margin_bottom = 195.0
 size_flags_horizontal = 3
 
 [node name="MenuButton" type="MenuButton" parent="HSplitContainer/VSplitContainer/PanelContainer2"]
@@ -183,9 +200,9 @@ text = "Menu"
 items = [ "Settings", null, 0, false, false, 0, 0, null, "", false, "Log Out", null, 0, false, false, 1, 0, null, "", false, "Skills", null, 0, false, false, 2, 0, null, "", false, "Contacts", null, 0, false, false, 3, 0, null, "", false ]
 
 [node name="Control" type="CenterContainer" parent="HSplitContainer/VSplitContainer"]
-margin_top = 166.0
+margin_top = 199.0
 margin_right = 343.0
-margin_bottom = 166.0
+margin_bottom = 199.0
 
 [node name="PanelContainer2" type="PanelContainer" parent="HSplitContainer"]
 margin_left = 355.0
